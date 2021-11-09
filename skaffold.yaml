@@ -28,3 +28,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+    - image: lnguyendev/m_property
+      context: property
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
